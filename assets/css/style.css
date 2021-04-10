@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Nunito&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #F4EEEE;
+  overflow-x:hidden
+}
+
+a:visited {
+  color: #75545E;
+}
+
+
+li{
+  margin:50px;
+}
+
+footer{
+  background-color: #75545E;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.menu{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__capsule{
+  color: #75545E;
+  font-size: 30px;
+  padding: 20px 100px;
+  border-radius: 100px;
+}
+
+.store{
+  background-color: #ECCBD1;
+}
+
+.presents{
+  background-color: #FECEAA;
+}
+
+.faq{
+  background-color: #ECCBD1;
+}
+
+.contact{
+  background-color: #E9B9BF;
+}
+
+.main-text{
+  font-family: 'Croissant One', cursive;
+  color: #75545E;
+  font-size: 40px;
+}
+
+.description_title{
+  font-family: 'Croissant One', cursive;
+  color: #75545E;
+  font-size: 24px;
+}
+
+.description_text{
+font-size: 18px;
+color: #75545E;
+}
+
+.preference_img{
+  max-width: 150px;
+}
+
+/**/
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+  color: #75545E;
+  font-size: 30px;
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+/**/
+
+/*contacto*/
+.contact-form{
+  background-color: #FFFFFF;
+  margin: 100px;
+  padding: 100px;
+  font-size: 18px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 5px 9px 3px #9E9E9E; 
+  box-shadow: 0px 5px 20px 3px #9E9E9E;
+}
+
+.btn-send{
+  background-color: #5E4386;
+  color: #FECEAA;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  border:none;
+}
+
+.btn-send:hover{
+  background-color: #FECEAA;
+  color: #5E4386;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  border:none;
+}
+/*fin contacto*/
+
+/*boutique*/
+.interior__secondmenu{
+  background-color: #ECCBD1;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.boutique__secondmenu a{
+  color: #75545E;
+}
+
+.boutique__menu{
+  margin: 50px;
+  max-height: 500px;
+}
+
+.boutique__product {
+  background-color: #5E4386;
+  color: #FECEAA;
+  padding: 10px 60px;
+  border-radius: 50px;
+  font-size: 25px;
+  border:none;
+}
+
+.grid_container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20pt;
+	padding-bottom: 15pt;
+}
+
+.food_item {
+  margin-top: 20px;
+	background: white;
+	border-radius: 18pt;
+	box-shadow: 0 1px 4px 0 rgba(50,50,93,0.10), 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+
+.food_block {
+	text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food_logo {
+	height: 300pt;
+}
+/**/
+
+/*regalos*/
+.container {
+  max-width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem;
+}
+.item {
+  margin: 1rem;
+}
+/**/
+
+/*faq*/
+.faq-header{
+  font-size: 42px;
+  border-bottom: 1px dotted #75545E;
+  padding: 24px;
+}
+
+.faq__content {
+  margin: 10px 200px 100px;
+  color: #75545E;
+}
+
+.faq__question {
+  padding: 20px 0;
+  border-bottom: 1px dotted #75545E;
+}
+
+.panel__title {
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel__content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel__content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 35px;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+/**/
