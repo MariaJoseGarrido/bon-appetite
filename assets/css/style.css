@@ -26,40 +26,42 @@ a:visited {
 .menu__capsule{
   color: #75545E;
   font-size: 1.5em;
-  padding: 20px 100px;
   border-radius: 100px 0px 0px 100px;
 }
 
 .store{
   background-color: #ECCBD1;
+  width: 100%;
 }
 
 .presents{
   background-color: #FECEAA;
+  width: 100%;
 }
 
 .faq{
   background-color: #ECCBD1;
+  width: 60%;
 }
 
 .contact{
   background-color: #E9B9BF;
+  width: 50%;
 }
 
 .main-text{
   font-family: 'Croissant One', cursive;
   color: #75545E;
-  font-size: 2.2em;
 }
 
 .description_title{
   font-family: 'Croissant One', cursive;
   color: #75545E;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .description_text{
-font-size: 1.2em;
+font-size: 1.1em;
 color: #75545E;
 }
 
@@ -127,7 +129,6 @@ width: 30vh;
 /*boutique*/
 .interior__secondmenu{
   background-color: #ECCBD1;
-  padding: 15px;
   font-size: 1.2em;
 }
 
@@ -143,40 +144,79 @@ width: 30vh;
 .boutique__product {
   background-color: #5E4386;
   color: #FECEAA;
-  padding: 10px 60px;
   border-radius: 50px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   border:none;
 }
 
-.grid_container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 20pt;
-	padding-bottom: 15pt;
-}
-
 .food_item {
-  margin-top: 20px;
 	background: white;
 	border-radius: 18pt;
 	box-shadow: 0 1px 4px 0 rgba(50,50,93,0.10), 0 3px 26px 0 rgba(0,0,0,0.20);
 }
 
-.food_block {
-	text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/**/
+
+/*macarons*/
+.product_img img{
+ width: 10% !important;
 }
 
-.food_logo {
-	height: 300pt;
+.food__card{
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 9px 3px #9E9E9E; 
+  box-shadow: 0px 5px 20px 3px #9E9E9E;
 }
+
+.food__card img{
+max-width: 80%;
+}
+
+.food__heart{
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #414141;
+  padding: 10px;
+  border-radius: 50px;
+  border: #E9B9BF 2px solid;
+}
+
+.food__bag{
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #414141;
+  padding: 10px;
+  border-radius: 50px;
+  border: #FECEAA 2px solid;
+}
+
+.food__heart:hover{
+  color: #414141;
+  background-color: #E9B9BF;
+}
+
+.food__bag:hover{
+  color: #414141;
+  background-color: #FECEAA;
+}
+
+.price__tag{
+  font-weight: 800;
+  color: #75545E;
+  background-color: #FFC68D;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+
+
+
+
 /**/
 
 /*regalos*/
-.container {
+.container-gift {
   max-width: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -269,7 +309,6 @@ width: 30vh;
 footer{
   background-color: #75545E;
   bottom: 0;
-  width: 100%;
   color: #ffffff;
 }
 /**/
