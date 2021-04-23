@@ -14,22 +14,13 @@ body {
   overflow-x:hidden
 }
 
-a:visited {
-  color: #75545E;
-}
 
-.menu{
-  right: 0;
-  z-index: 99;
-}
-
-.menu__capsule{
-  font-size: 1.5em;
+.menu__capsule, a{
+  font-size: 1.2em;
   padding: 20px 0;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-  margin-right: 0;
-  margin-left: auto;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  color: #75545E !important;
 }
 
 .store{
@@ -85,10 +76,14 @@ width: 30vh;
   min-height: 3em;
 }
 
+.instagram__section img{
+  max-width: 200px;
+}
+
 /**/
 
 .blink{
-  color: #75545E;
+  color: #fe7bbb;
   font-size: 2em;
 	text-decoration: blink;
 	-webkit-animation-name: blinker;
@@ -150,7 +145,7 @@ width: 30vh;
 
 .boutique__product {
   background-color: #5E4386;
-  color: #FECEAA;
+  color: #FECEAA !important;
   border-radius: 50px;
   font-size: 1.2em;
   border:none;
@@ -159,7 +154,6 @@ width: 30vh;
 .food_item {
 	background: white;
 	border-radius: 18pt;
-	box-shadow: 0 1px 4px 0 rgba(50,50,93,0.10), 0 3px 26px 0 rgba(0,0,0,0.20);
 }
 
 /**/
@@ -318,13 +312,105 @@ max-width: 80%;
 
 /* footer */
 footer{
-  background-color: #75545E;
+  background-color: #fda0a1;
   bottom: 0;
   color: #ffffff;
+}
+
+.newsletter{
+  font-size: 2em;
+}
+
+.map__footer img{
+  border-radius: 18px;
 }
 /**/
 
 
-/*/
+/*media query*/
+@media (max-width: 768px) { 
+  .hidden-xs {
+    display: none!important;
+}
 
-/*/
+.visible-xs {
+  display: block!important;
+}
+
+.preference_img{
+width: 80px;
+}
+
+img.newsletter_cupcakes{
+  width: 200px;
+}
+
+}
+ 
+
+@media (max-width: 480px) { 
+  .hidden-xs {
+    display: none!important;
+}
+
+.visible-xs {
+  display: block!important;
+}
+}
+
+
+@media (min-width: 1024px){
+  .hidden-xs {
+    display: block!important;
+}
+
+.visible-xs {
+  display: none!important;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .hidden-xs {
+      display: block!important;
+  }
+  
+  .visible-xs {
+    display: none!important;
+  }
+
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .hidden-xs {
+      display: block!important;
+  }
+  
+  .visible-xs {
+    display: none!important;
+  }
+}
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: landscape) 
+    { 
+      .hidden-xs {
+        display: block!important;
+    }
+    
+    .visible-xs {
+      display: none!important;
+    } 
+    }
+
+/**/

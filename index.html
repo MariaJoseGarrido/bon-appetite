@@ -16,10 +16,10 @@
   <div class="row">
     <div class="col-md-10">
       <a href="index.html">
-        <img class="logo-img mt-4" src="assets/img/bonappetit.png" alt="logo_Bon_Appetit" />
+        <img class="logo-img my-3" src="assets/img/bonappetit.png" alt="logo_Bon_Appetit" />
       </a>
     </div>
-    <div class="col-md-2 d-flex justify-content-end mt-5">
+    <div class="col-md-2 d-flex justify-content-center my-5">
       <i class="fas fa-search mx-4"></i>
       <i class="fas fa-heart mx-4"></i>
       <i class="fas fa-user mx-4"></i>
@@ -27,16 +27,17 @@
     </div>
   </div>
 </div>
-  <!-- <span class="blink">Bienvenidos </span> -->
 <div class="row mt-4">
    <div class="col-md-8">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/img/home/cupcakes-banner.png" alt="First slide">
+          <img class="d-block w-100 hidden-xs" src="assets/img/home/cupcakes-banner.png" alt="First slide">
+          <img class="d-block w-100 visible-xs" src="assets/img/home/cupcakes-banner-mob.png" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/img/home/macarons-banner.jpg" alt="Second slide">
+          <img class="d-block w-100 hidden-xs" src="assets/img/home/macarons-banner.jpg" alt="Second slide">
+          <img class="d-block w-100 visible-xs" src="assets/img/home/macarons-banner-mob.jpg" alt="Second slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -49,7 +50,7 @@
       </a>
     </div>
   </div>
-  <nav class="menu position-fixed">
+  <nav>
     <ul>
       <li class="my-3 store text-center menu__capsule"><a href="boutique.html">Boutique</a></li>
       <li class="my-3 presents text-center menu__capsule"><a href="regalos.html" >Regalos</a></li>
@@ -59,7 +60,7 @@
   </nav>
 </div>
 </header>
-<main class="container-fluid d-flex justify-content-center m-5">
+<main class="container d-flex justify-content-center mt-5">
   <section class="row">  
     <div class="col-md-12 main-text text-center">
      <h3>¿Por qué nos prefieren?</h3>
@@ -70,8 +71,7 @@
           <img class="preference_img" src="assets/img/whisk.png" alt="batidor">
         </div>
         <h5 class="description_title text-center">Productos Frescos</h5>
-        <p class="description_text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae, eos
-          ducimus.</p>
+        <p class="description_text text-center">Elaborados día a día con productos naturales para asegurar su frescura y calidad.</p>
       </div>
     </div>
     <div class="col-md-4">
@@ -81,8 +81,7 @@
         </div>
     
         <h5 class="description_title text-center">Bien empacados</h5>
-        <p class="description_text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae, eos
-          ducimus.</p>
+        <p class="description_text text-center">Nuestros productos no solo se despachan bien empacados, en cajas aptas para mantener su frescura, también son reciclables.</p>
       </div>
     </div>
     <div class="col-md-4">
@@ -92,37 +91,85 @@
         </div>
         
         <h5 class="description_title text-center">Transporte seguro</h5>
-        <p class="description_text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae, eos
-          ducimus.</p>
+        <p class="description_text text-center">Nosotros mismos nos encargamos de transportar tus productos favoritos</p>
       </div>
     </div>
   </section>
 </main>
+
+<section class="container instagram__section mt-4">  
+  <div class="row">
+    <div class="col-md-12 main-text text-center">
+      <h4>últimas publicaciones de instagram</h4>
+    </div>
+    <div class="col-sm-2 m-3">
+      <img src="assets/img/home/insta_1.jpeg" alt="instagram">
+    </div>
+    <div class="col-sm-2 m-3">
+      <img src="assets/img/home/insta_2.jpeg" alt="instagram">
+    </div>
+    <div class="col-sm-2 m-3">
+      <img src="assets/img/home/insta_3.jpeg" alt="instagram">
+    </div>
+    <div class="col-sm-2 m-3">
+      <img src="assets/img/home/insta_4.jpeg" alt="instagram">
+    </div>
+    <div class="col-sm-2 m-3">
+      <img src="assets/img/home/insta_5.jpeg" alt="instagram">
+    </div>
+  </div>
+</section>
+
 <footer class="container-fluid">
+  <div class="row">
   <!--tabla-->
-  <div class="mx-5">
+  <div class="col-md-2 m-5 d-flex justify-content-center">
     <table>
       <tr>
         <th colspan="3">Horarios Patelería</th>
       </tr>
       <tr>
         <td>Lun - Vie</td>
-        <td>20</td>
+        <td height="10">&nbsp;</td>
         <td>16:00 - 20:00</td>
       </tr>
       <tr>
         <td>Sábado</td>
-        <td>20</td>
+        <td height="10">&nbsp;</td>
         <td>16:00 - 20:00</td>
       </tr>
       <tr>
         <td>Domingo</td>
-        <td>60</td>
+        <td height="10">&nbsp;</td>
         <td>16:00 - 20:00</td>
       </tr>
     </table>
   </div>
   <!--tabla-->
+  <div class="col-md-2 mt-4 d-flex justify-content-center">
+    <div>
+      <img class="newsletter_cupcakes" src="assets/img/footer_cupcakes.jpg" alt="newsletter">
+    </div>
+  </div>
+  <div class="col-md-2 m-4 ">
+    <div>
+      <span class="newsletter">Newsletter</span>
+      <div class="form-group">
+        <label for="inputName">Nombre completo</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Correo electrónico</label>
+      <input type="text" class="form-control">
+    </div>
+    </div>  
+    <div class="col-md-2 m-4 map__footer">
+      <span class="newsletter">Nuestra ubicación</span>
+    <img src="assets/img/home/mapa.jpeg" alt="mapa">
+  </div>
+  </div>
+
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
