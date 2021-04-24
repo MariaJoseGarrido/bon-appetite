@@ -356,6 +356,10 @@ img.newsletter_cupcakes{
 .visible-xs {
   display: block!important;
 }
+
+.map__footer img{
+  max-width: 250px;
+}
 }
 
 
@@ -367,6 +371,7 @@ img.newsletter_cupcakes{
 .visible-xs {
   display: none!important;
 }
+
 }
 
 @media only screen 
@@ -380,6 +385,10 @@ img.newsletter_cupcakes{
   
   .visible-xs {
     display: none!important;
+  }
+
+  .map__footer img{
+    max-width: 150px;
   }
 
 }
@@ -396,6 +405,10 @@ img.newsletter_cupcakes{
   .visible-xs {
     display: none!important;
   }
+
+  .map__footer img{
+    max-width: 250px;
+  }
 }
 
 @media only screen 
@@ -411,6 +424,10 @@ img.newsletter_cupcakes{
     .visible-xs {
       display: none!important;
     } 
+
+    .map__footer img{
+      max-width: 250px;
+    }
     }
 
 /**/
