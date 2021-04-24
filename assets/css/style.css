@@ -76,9 +76,6 @@ width: 30vh;
   min-height: 3em;
 }
 
-.instagram__section img{
-  max-width: 200px;
-}
 
 /**/
 
@@ -329,14 +326,6 @@ footer{
 
 /*media query*/
 @media (max-width: 768px) { 
-  .hidden-xs {
-    display: none!important;
-}
-
-.visible-xs {
-  display: block!important;
-}
-
 .preference_img{
 width: 80px;
 }
@@ -349,13 +338,6 @@ img.newsletter_cupcakes{
  
 
 @media (max-width: 480px) { 
-  .hidden-xs {
-    display: none!important;
-}
-
-.visible-xs {
-  display: block!important;
-}
 
 .map__footer img{
   max-width: 250px;
@@ -363,29 +345,12 @@ img.newsletter_cupcakes{
 }
 
 
-@media (min-width: 1024px){
-  .hidden-xs {
-    display: block!important;
-}
-
-.visible-xs {
-  display: none!important;
-}
-
-}
-
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-    .hidden-xs {
-      display: block!important;
-  }
-  
-  .visible-xs {
-    display: none!important;
-  }
+
 
   .map__footer img{
     max-width: 150px;
@@ -398,13 +363,6 @@ img.newsletter_cupcakes{
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-    .hidden-xs {
-      display: block!important;
-  }
-  
-  .visible-xs {
-    display: none!important;
-  }
 
   .map__footer img{
     max-width: 250px;
@@ -417,13 +375,6 @@ img.newsletter_cupcakes{
     and (-webkit-device-pixel-ratio: 2) 
     and (orientation: landscape) 
     { 
-      .hidden-xs {
-        display: block!important;
-    }
-    
-    .visible-xs {
-      display: none!important;
-    } 
 
     .map__footer img{
       max-width: 250px;
