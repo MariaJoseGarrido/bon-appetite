@@ -1,0 +1,388 @@
+@import 'variables';
+@import 'fuentes';
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-family: $main-font;
+  background-color: #F4EEEE;
+  overflow-x:hidden
+}
+
+.menu__capsule, a{
+  font-size: 1.2em;
+  padding: 20px 0;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  color: $title-color !important; 
+}
+
+.store{
+  background-color: #ECCBD1;
+  width: 225px;
+}
+
+.presents{
+  background-color: $softpeach-color;
+  width: 200px;
+}
+
+.faq{
+  background-color: #ECCBD1;
+  width: 175px;
+}
+
+.contact{
+  background-color: $softpink-color;
+  width: 150px;
+}
+
+.main-text{
+  font-family: 'Croissant One', cursive;
+  color: $title-color;
+}
+
+.description_title{
+  font-family: 'Croissant One', cursive;
+  color: $title-color;
+  font-size: 1.5em;
+}
+
+.description_text{
+font-size: 1.1em;
+color: $title-color;
+}
+
+.preference_img{
+  max-width: 150px;
+}
+
+.fas{
+  color: $title-color;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.fas:hover{
+  color: $white-color;
+  font-size: 1.5em;
+} 
+
+.logo-img{
+width: 30vh;
+}
+
+.delivery img{
+  min-height: 3em;
+}
+
+
+/**/
+
+.blink{
+  color: #fe7bbb;
+  font-size: 2em;
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+/**/
+
+/*contacto*/
+.contact-form{
+  background-color: $white-color;
+  padding: 100px;
+  font-size: 1.1em;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 5px 9px 3px #9E9E9E; 
+  box-shadow: 0px 5px 20px 3px #9E9E9E;
+}
+
+.btn-send{
+  background-color: #5E4386;
+  color: $softpeach-color;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 1.1em;
+  border:none;
+}
+
+.btn-send:hover{
+  background-color: $softpeach-color;
+  color: #5E4386;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 1.1em;
+  border:none;
+}
+/*fin contacto*/
+
+/*boutique*/
+.interior__secondmenu{
+  background-color: #ECCBD1;
+  font-size: 1.2em;
+}
+
+.boutique__secondmenu a{
+  color: $title-color;
+}
+
+.boutique__menu{
+  margin: 50px;
+  max-height: 500px;
+}
+
+.boutique__product {
+  background-color: #5E4386;
+  color: $softpeach-color !important;
+  border-radius: 50px;
+  font-size: 1.2em;
+  border:none;
+}
+
+.food_item {
+	background: white;
+	border-radius: 18pt;
+}
+
+/**/
+
+/*macarons*/
+.product_img img{
+ width: 10% !important;
+}
+
+.food__card{
+  background-color: $white-color;
+  border-radius: 20px;
+
+}
+
+.food__card:hover{
+-webkit-box-shadow: 0px 5px 9px 3px #9E9E9E; 
+box-shadow: 0px 5px 20px 3px #9E9E9E;
+}
+
+.food__card img{
+max-width: 80%;
+}
+
+.food__heart{
+  cursor: pointer;
+  font-size: 1.5em;
+  color: $softgray-color;
+  padding: 10px;
+  border-radius: 50px;
+  border: $softpink-color 2px solid;
+}
+
+.food__bag{
+  cursor: pointer;
+  font-size: 1.5em;
+  color: $softgray-color;
+  padding: 10px;
+  border-radius: 50px;
+  border: $softpeach-color 2px solid;
+}
+
+.food__heart:hover{
+  color: $softgray-color;
+  background-color: $softpink-color;
+}
+
+.food__bag:hover{
+  color: $softgray-color;
+  background-color: $softpeach-color;
+}
+
+.price__tag{
+  font-weight: 800;
+  color: $title-color;
+  background-color: #FFC68D;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+
+/**/
+
+/*regalos*/
+.container-gift {
+  max-width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem;
+}
+.item {
+  margin: 1rem;
+}
+
+/**/
+
+/*faq*/
+.faq-header{
+  font-size: 2em;
+  border-bottom: 1px dotted $title-color;
+  padding: 24px;
+}
+
+.faq__content {
+  margin: 10px 200px 100px;
+  color: $title-color;
+}
+
+.faq__question {
+  padding: 20px 0;
+  border-bottom: 1px dotted $title-color;
+}
+
+.panel__title {
+  font-size: 1.5em;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel__content {
+  font-size: 1.2em;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel__content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+/**/ 
+
+/* footer */
+footer{
+  background-color: #fda0a1;
+  bottom: 0;
+  color: #ffffff;
+}
+
+.newsletter{
+  font-size: 2em;
+}
+
+.map__footer img{
+  border-radius: 18px;
+}
+/**/
+
+
+/*media query*/
+@media (max-width: 768px) { 
+.preference_img{
+width: 80px;
+}
+
+img.newsletter_cupcakes{
+  width: 200px;
+}
+
+}
+ 
+
+@media (max-width: 480px) { 
+
+.map__footer img{
+  max-width: 250px;
+}
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+
+  .map__footer img{
+    max-width: 150px;
+  }
+
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+  .map__footer img{
+    max-width: 250px;
+  }
+}
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: landscape) 
+    { 
+
+    .map__footer img{
+      max-width: 250px;
+    }
+    }
+
+/**/

@@ -23,11 +23,12 @@
             <img class="logo-img my-3" src="/assets/img/bonappetit.png" alt="logo_Bon_Appetit" />
           </a>
         </div>
+        
         <div class="col-md-2 d-flex justify-content-end mt-5">
-          <i class="fas fa-search mx-4"></i>
-          <i class="fas fa-heart mx-4"></i>
-          <i class="fas fa-user mx-4"></i>
-          <i class="fas fa-shopping-bag mx-4"></i>
+          <i class="fas fa-search mx-4" title="Buscar"></i>
+          <i class="fas fa-heart mx-4" title="Favoritos"></i>
+          <i class="fas fa-user mx-4" title="Mi perfil"></i>
+          <i class="fas fa-shopping-bag mx-4" title="Carrito"></i>
         </div>
       </div>
     </div>
@@ -42,215 +43,204 @@
     </nav>
   </header>
 
-  <main class="container-fluid m-5">
-    <div>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
-          <li class="breadcrumb-item"><a href="/boutique.html">Boutique</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Donas</li>
-        </ol>
-      </nav>
-    </div>
-
+  <main class="container-fluid my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="/boutique.html">Boutique</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Donas</li>
+      </ol>
+    </nav>
     <div class="container">
       <div class="row">
-        <div class="col-sm-2 d-flex justify-content-start">
+        <div class="col-md-2 d-flex justify-content-start">
           <ul>
-            <li><a href="/submenu/macarons.html">Macarons</a></li>
+            <li><a href="#">Macarons</a></li>
             <li><a href="/submenu/cupcakes.html">Cupcakes</a></li>
             <li><a href="/submenu/chocolate.html">Chocolates</a></li>
-            <li><a href="#">Donas</a></li>
+            <li><a href="/submenu/donas.html">Donas</a></li>
           </ul>
         </div>
-        <div class="col-sm-10">
-          <div class="row">
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/58803BloodOrange.png">
-              </div>
-              <div>
-                <p>Con una rodaja de naranja sanguina confitada y glaseado de naranja dulce. (stock limitado durante el día).</p>
-              </div>
-              <div class="price__tag text-center mb-3"> Blood orange $2.25</div>
-            </div>
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/63482PeanutButter.png">
-              </div>
-              <div>
-                <p>Mantequilla de maní y chocolate, con maní seleccionados tostados con miel, pregunta por la opción "spicy".</p>
-              </div>
-              <div class="price__tag text-center mb-3"> Peanut Butter $2.25</div>
-            </div>
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/23867Jam.png">
-              </div>
-              <div>
-                <p>Nuestro clásico relleno de mermelada de temporada. Los sabores incluyen fresa, frambuesa, melocotón y albaricoque.</p>
-              </div>
-              <div class="price__tag text-center mb-3"> Seasonal Jam $1.99</div>
-            </div>
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/78647Dulce.png">
-              </div>
-              <div>
-                <p>Glaseado de dulce de leche casero con crujientes almendras tostadas laminadas.</p>
-              </div>
-              <div class="price__tag text-center mb-3"> Dulce de leche $1.99</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2 d-flex justify-content-start">
-        </div>
-        <div class="col-sm-10">
+        <div class="col-md-10">
           <div class="row">
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/58803BloodOrange.png" alt="dona">
+                </div>
+                <p>Con una rodaja de naranja sanguina confitada y glaseado de naranja dulce. (stock limitado durante el día).</p>
+                <h6 class="price__tag text-center mb-3">Blood orange $4.25</h6>
               </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/25144Crunch.png">
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/63482PeanutButter.png" alt="dona">
+                </div>
+                <p>Mantequilla de maní y chocolate, con maní seleccionados tostados con miel, pregunta por la opción "spicy".</p>
+                <h6 class="price__tag text-center mb-3"> Peanut Butter  $4.25</h6>
               </div>
-              <div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/23867Jam.png" alt="dona">
+                </div>
+                <p>Clásico relleno de mermelada. Los sabores incluyen fresa, frambuesa, melocotón y albaricoque.</p>
+                <h6 class="price__tag text-center mb-3"> Seasonal Jam $4.25</h6>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/78647Dulce.png" alt="dona">
+                </div>
+                <p>Glaseado de dulce de leche casero 100%, decorado con crujientes almendras tostadas y laminadas.</p>
+                <h6 class="price__tag text-center mb-3"> Dulce de leche $4.99</h6>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/25144Crunch.png" alt="dona">
+                </div>
                 <p>Rico glaseado elaborado con chocolate agridulce "Vintage Plantation" y café tostado, cubierto con un crujientes almendras.</p>
+                <h6 class="price__tag text-center mb-3">  Mocha  $4.99</h6>
               </div>
-              <div class="price__tag text-center mb-3"> Mocha crujiente $1.99</div>
             </div>
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/38594Hibi.png">
-              </div>
-              <div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/38594Hibi.png" alt="dona">
+                </div>
                 <p>Glaseado dulce y picante hecho con hibisco mexicano seco, cubierto con una bella flor de hibisco deshidratada confitada.</p>
+                <h6 class="price__tag text-center mb-3"> Hibisco $4.25</h6>
               </div>
-              <div class="price__tag text-center mb-3"> Hibisco $2.25</div>
             </div>
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/9833CannoliWebsite202.png" alt="dona">
+                </div>
+                <p>Rellena con una exquisita y clásica crema pastelera, pistacho tostado picado con un topping de azúcar glass.</p>
+                <h6 class="price__tag text-center mb-3"> Pastelera  $4.99</h6>
               </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/9833CannoliWebsite202.png">
-              </div>
-              <div>
-                <p>Rellena con una exquisita crema pastelera y pistacho picado, topping de azúcar glass.</p>
-              </div>
-              <div class="price__tag text-center mb-3"> Crema pastelera $1.99</div>
             </div>
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/25566Smores.png">
-              </div>
-              <div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/25566Smores.png" alt="dona">
+                </div>
                 <p>Glaseado que une lo mejor del chocolate amargo 72% cacao y chocolate blanco de leche, con topping de canela en polvo.</p>
+                <h6 class="price__tag text-center mb-3"> S’mores $4.25</h6>
               </div>
-              <div class="price__tag text-center mb-3"> S’mores $2.25</div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/98206ChaiDoughnut2020.png" alt="dona">
+                </div>
+                <p>Dona de vainilla con un glaseado sabor a clásico té chai latte de la India. (Stock limitado durante el día).</p>
+                <h6 class="price__tag text-center mb-3">Chai $4.25</h6>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/96523Coco.png" alt="dona">
+                </div>
+                <p>Dona de vainilla con un glaseado dulce de crema de coco, cubierto con hojuelas de coco molidas y tostadas.</p>
+                <h6 class="price__tag text-center mb-3">Coco tostado $4.25</h6>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/16065WhiteChocolatePeppermint.png" alt="dona">
+                </div>
+                <p>Un clásico un un giro de sabor, nuestro menta chocolate está hecho un cremoso chocolate blanco de leche.</p>
+                <h6 class="price__tag text-center mb-3"> Chocomenta $3.25</h6>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <div class="food__card p-3 my-2">
+                <div class="d-flex justify-content-end mt-3">
+                  <i class="fas fa-heart food__heart"></i>
+                  <i class="fas fa-shopping-bag food__bag"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="/assets/img/boutique_img/donas/49267Passion.png" alt="dona">
+                </div>
+                <p>Glaseado agridulce elaborado con puré de maracuyá de alta calidad, cubierto con semillas de cacao.</p>
+                <h6 class="price__tag text-center mb-3">  Passionfruit $4.99</h6>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2 d-flex justify-content-start">
-        </div>
-        <div class="col-sm-10">
-          <div class="row">
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/98206ChaiDoughnut2020.png">
-              </div>
-              <div>
-                <p>Glaseado con sabor a clásico té chai latte de la India. (Stock limitado durante el día).</p>
-              </div>
-              <div class="price__tag text-center mb-3"> Chai $2.25</div>
-            </div>
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/96523Coco.png">
-              </div>
-              <div>
-                <p>Glaseado dulce de coco cubierto con hojuelas de coco molidas y tostadas.</p>
-              </div>
-              <div class="price__tag text-center mt-5 mb-3"> Coco Tostado $2.25</div>
-            </div>
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/16065WhiteChocolatePeppermint.png">
-              </div>
-              <div>
-                <p>Un clásico un un giro de sabor, nuestro menta chocolate está hecho un cremoso chocolate blanco de leche.</p>
-              </div>
-              <div class="price__tag text-center mb-3"> Menta y chocolate $2.25</div>
-            </div>
-            <div class="col-md food__card m-1">
-              <div class="d-flex justify-content-end mt-3">
-                <i class="fas fa-heart food__heart"></i>
-                <i class="fas fa-shopping-bag food__bag"></i>
-              </div>
-              <div class="d-flex justify-content-center">
-                <img src="/assets/img/boutique_img/donas/49267Passion.png">
-              </div>
-              <div>
-                <p>Glaseado agridulce elaborado con puré de maracuyá de alta calidad, cubierto con semillas de cacao.</p>
-              </div>
-              <div class="price__tag text-center mb-3"> Fruta de la pasión $1.99</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> 
   </main>
+
+
   <footer class="container-fluid">
     <div class="row">
-  
-    
     <!--tabla-->
     <div class="col-md-2 m-5 d-flex justify-content-center">
       <table>
@@ -277,7 +267,7 @@
     <!--tabla-->
     <div class="col-md-2 mt-4 d-flex justify-content-center">
       <div>
-        <img class="newsletter_cupcakes" src="assets/img/footer_cupcakes.jpg" alt="newsletter">
+        <img class="newsletter_cupcakes" src="/assets/img/footer_cupcakes.jpg" alt="newsletter">
       </div>
     </div>
     <div class="col-md-2 m-4 ">
@@ -292,10 +282,11 @@
         <label for="inputAddress">Correo electrónico</label>
         <input type="text" class="form-control">
       </div>
+      <button type="button" class="btn btn-light">Suscribirme!</button>
       </div>  
       <div class="col-md-2 m-4 map__footer">
         <span class="newsletter">Nuestra ubicación</span>
-      <img src="assets/img/home/mapa.jpeg" alt="mapa">
+      <img src="/assets/img/home/mapa.jpeg" alt="mapa">
     </div>
     </div>
   
