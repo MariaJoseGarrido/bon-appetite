@@ -70,8 +70,9 @@ color: $title-color;
 }
 
 .fas:hover{
-  color: $white-color;
+  color: $softpurple-color;
   font-size: 1.5em;
+  cursor: pointer;
 } 
 
 .logo-img{
@@ -113,7 +114,7 @@ width: 30vh;
 }
 
 .btn-send{
-  background-color: #5E4386;
+  background-color: $purple-color;
   color: $softpeach-color;
   padding: 10px 40px;
   border-radius: 20px;
@@ -123,7 +124,7 @@ width: 30vh;
 
 .btn-send:hover{
   background-color: $softpeach-color;
-  color: #5E4386;
+  color: $purple-color;
   padding: 10px 40px;
   border-radius: 20px;
   font-size: 1.1em;
@@ -147,7 +148,7 @@ width: 30vh;
 }
 
 .boutique__product {
-  background-color: #5E4386;
+  background-color: $purple-color;
   color: $softpeach-color !important;
   border-radius: 50px;
   font-size: 1.2em;
@@ -155,7 +156,7 @@ width: 30vh;
 }
 
 .food_item {
-	background: white;
+	background: $white-color;
 	border-radius: 18pt;
 }
 
@@ -173,8 +174,8 @@ width: 30vh;
 }
 
 .food__card:hover{
--webkit-box-shadow: 0px 5px 9px 3px #9E9E9E; 
-box-shadow: 0px 5px 20px 3px #9E9E9E;
+-webkit-box-shadow: 0px 5px 9px 3px $babygrey-color; 
+box-shadow: 0px 5px 20px 3px $babygrey-color;
 }
 
 .food__card img{
@@ -212,7 +213,7 @@ max-width: 80%;
 .price__tag{
   font-weight: 800;
   color: $title-color;
-  background-color: #FFC68D;
+  background-color: $softorange-color;
   border-radius: 50px;
   padding: 10px;
 }
@@ -313,9 +314,9 @@ max-width: 80%;
 
 /* footer */
 footer{
-  background-color: #fda0a1;
+  background-color: $reallypink-color;
   bottom: 0;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .newsletter{

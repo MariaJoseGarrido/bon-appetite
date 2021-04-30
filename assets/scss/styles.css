@@ -70,8 +70,9 @@ body {
 }
 
 .fas:hover {
-  color: #ffffff;
+  color: #886a94;
   font-size: 1.5em;
+  cursor: pointer;
 }
 
 .logo-img {
@@ -157,7 +158,7 @@ body {
 }
 
 .food_item {
-  background: white;
+  background: #ffffff;
   border-radius: 18pt;
 }
 
