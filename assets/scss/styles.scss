@@ -11,20 +11,20 @@
 
 body {
   font-family: $main-font;
-  background-color: #F4EEEE;
+  background-color: $background-color;
   overflow-x:hidden
 }
 
 .menu__capsule, a{
-  font-size: 1.2em;
+  font-size: $capsule-font-size;
   padding: 20px 0;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
+  border-bottom-right-radius: $fifty-px;
+  border-top-right-radius: $fifty-px;
   color: $title-color !important; 
 }
 
 .store{
-  background-color: #ECCBD1;
+  background-color: $peachypink-color;
   width: 225px;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .faq{
-  background-color: #ECCBD1;
+  background-color: $peachypink-color;
   width: 175px;
 }
 
@@ -87,8 +87,8 @@ width: 30vh;
 /**/
 
 .blink{
-  color: #fe7bbb;
-  font-size: 2em;
+  color: $blinker-color;
+  font-size: $big-font-size;
 	text-decoration: blink;
 	-webkit-animation-name: blinker;
 	-webkit-animation-duration: 0.6s;
@@ -108,9 +108,9 @@ width: 30vh;
   background-color: $white-color;
   padding: 100px;
   font-size: 1.1em;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 5px 9px 3px #9E9E9E; 
-  box-shadow: 0px 5px 20px 3px #9E9E9E;
+  border-radius: $fifty-px;
+  -webkit-box-shadow: 0px 5px 9px 3px $babygrey-color; 
+  box-shadow: 0px 5px 20px 3px $babygrey-color;
 }
 
 .btn-send{
@@ -130,12 +130,22 @@ width: 30vh;
   font-size: 1.1em;
   border:none;
 }
+/*bucle sass*/
+@for $i from 1 through 4 {
+	.sq-#{$i}{
+		width: $fifty-px + $i*25;
+		background-color: $reallypink-color;
+		height: 40px;
+		margin-bottom: 20px;
+	}
+} 
+/*bucle sass*/
 /*fin contacto*/
 
 /*boutique*/
 .interior__secondmenu{
-  background-color: #ECCBD1;
-  font-size: 1.2em;
+  background-color: $peachypink-color;
+  font-size: $capsule-font-size;
 }
 
 .boutique__secondmenu a{
@@ -143,15 +153,15 @@ width: 30vh;
 }
 
 .boutique__menu{
-  margin: 50px;
+  margin: $fifty-px;
   max-height: 500px;
 }
 
 .boutique__product {
   background-color: $purple-color;
   color: $softpeach-color !important;
-  border-radius: 50px;
-  font-size: 1.2em;
+  border-radius: $fifty-px;
+  font-size: $capsule-font-size;
   border:none;
 }
 
@@ -187,7 +197,7 @@ max-width: 80%;
   font-size: 1.5em;
   color: $softgray-color;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: $fifty-px;
   border: $softpink-color 2px solid;
 }
 
@@ -196,7 +206,7 @@ max-width: 80%;
   font-size: 1.5em;
   color: $softgray-color;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: $fifty-px;
   border: $softpeach-color 2px solid;
 }
 
@@ -214,7 +224,7 @@ max-width: 80%;
   font-weight: 800;
   color: $title-color;
   background-color: $softorange-color;
-  border-radius: 50px;
+  border-radius: $fifty-px;
   padding: 10px;
 }
 
@@ -236,7 +246,7 @@ max-width: 80%;
 
 /*faq*/
 .faq-header{
-  font-size: 2em;
+  font-size: $big-font-size;
   border-bottom: 1px dotted $title-color;
   padding: 24px;
 }
@@ -262,7 +272,7 @@ max-width: 80%;
 }
 
 .panel__content {
-  font-size: 1.2em;
+  font-size: $capsule-font-size;
   padding: 0px 14px;
   margin: 0 40px;
   height: 0;
@@ -287,7 +297,7 @@ max-width: 80%;
   margin-left: 20px;
   margin-top: 4px;
   z-index: 5;
-  font-size: 2em;
+  font-size: $big-font-size;
   line-height: 100%;
   -webkit-user-select: none;    
   -moz-user-select: none;
@@ -320,7 +330,7 @@ footer{
 }
 
 .newsletter{
-  font-size: 2em;
+  font-size: $big-font-size;
 }
 
 .map__footer img{
