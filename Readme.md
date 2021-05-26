@@ -1,4 +1,4 @@
-![enter image description here](/assets/img/mauve_color.png)
+![enter image description here](/assets/img/bonappetit.png)
 # Bon Appetit
 
 Hola! soy María José Garrido y este es mi proyecto para **Diseño web** en **Coderhouse**. Mi tutora durante el proceso fue **Milena Monzon**, y mi profesor **Darío Capdevila**, gracias por todo! 💕
