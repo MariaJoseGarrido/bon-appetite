@@ -8,14 +8,116 @@
 	text-decoration: none;
   outline: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
   font-family: $main-font;
   background-color: $background-color;
-  overflow-x:hidden
+  overflow-x:hidden;
 } 
 
-.menu__capsule, a{
+/* Menu */ 
+/**************************/
+#navMain {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+	font-family:$main-font; 
+}
+
+#navMain ul,
+#navMain li,
+#navMain a {
+  position: relative;
+  list-style:none;
+  text-decoration: none;
+}
+#navMain ul li a {
+  display: block;
+  color: #928C90;
+  padding: 10px 10px;
+  position: relative;
+}
+
+#navMain > ul {
+  position: relative;
+  margin: 0 auto;
+}
+#navMain > ul > li > a {
+  height:100%;
+  background: $peachypink-color;
+}
+
+#navMain li > a:hover,
+#navMain li > a:focus {
+  background: $white-color !important;
+}
+
+#navMain .hasSub:after {
+  position: absolute;
+  content: "\25BC";
+  display: block;
+  font-size: 0.7em;
+  color: $white-color;
+  top: 14px;
+  right: 10px;
+  cursor: pointer;
+
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+#navMain .hasSub.open:after {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+/* Menu BURGER (responsive) */
+#menuBurger {
+  display: none; 
+}
+#menuBurger ~ label {
+  display: none;
+  z-index:2;
+  position:absolute;
+  right:0;
+  top:0;
+  cursor: pointer;
+  vertical-align: top;
+  background: $peachypink-color;
+  width: 38px;
+  height: 38px;
+}
+#menuBurger ~ label::before {
+  content: "";
+  margin: 6px auto;
+  width: 24px;
+  height: 5px;
+  background: $softgray-color;
+  box-shadow: 0 10px 0 0 $softgray-color, 0 20px 0 0 $softgray-color;
+}
+#menuBurger ~ label::after {
+  display: none;
+  content: "\2716"; 
+  font-weight: 900;
+  margin: auto;
+  font-size: 26px;
+  color: $softgray-color;
+}
+#menuBurger:checked ~ label::after {
+  display: block;
+}
+#menuBurger:checked ~ label::before {
+  display: none;
+}
+
+a{
+  font-size: $capsule-font-size;
+  color: $title-color !important; 
+}
+
+.menu__capsule{
   font-size: $capsule-font-size;
   padding: 20px 0;
   border-bottom-right-radius: $fifty-px;
@@ -44,14 +146,14 @@ body {
 }
 
 .main-text{
-  font-family: 'Croissant One', cursive;
+  font-family: $second-font;
   color: $title-color;
 }
 
 .description_title{
-  font-family: 'Croissant One', cursive;
+  font-family: $second-font;
   color: $title-color;
-  font-size: 1.5em;
+  font-size: $middle-font;
 }
 
 .description_text{
@@ -65,13 +167,13 @@ color: $title-color;
 
 .fas{
   color: $title-color;
-  font-size: 1.5em;
+  font-size: $middle-font;
   cursor: pointer;
 }
 
 .fas:hover{
   color: $softpurple-color;
-  font-size: 1.5em;
+  font-size: $middle-font;
   cursor: pointer;
 } 
 
@@ -82,8 +184,6 @@ width: 30vh;
 .delivery img{
   min-height: 3em;
 }
-
-
 /**/
 
 .blink{
@@ -130,24 +230,9 @@ width: 30vh;
   font-size: 1.1em;
   border:none;
 }
-/*bucle sass*/
-@for $i from 1 through 4 {
-	.sq-#{$i}{
-		width: $fifty-px + $i*25;
-		background-color: $reallypink-color;
-		height: 40px;
-		margin-bottom: 20px;
-	}
-} 
-/*bucle sass*/
 /*fin contacto*/
 
 /*boutique*/
-.interior__secondmenu{
-  background-color: $peachypink-color;
-  font-size: $capsule-font-size;
-}
-
 .boutique__secondmenu a{
   color: $title-color;
 }
@@ -163,6 +248,15 @@ width: 30vh;
   border-radius: $fifty-px;
   font-size: $capsule-font-size;
   border:none;
+}
+
+.boutique__product:hover {
+  background-color: $softpink-color;
+  color: $title-color!important;
+  border-radius: $fifty-px;
+  font-size: $capsule-font-size;
+  border:none;
+  text-decoration: none;
 }
 
 .food_item {
@@ -194,7 +288,7 @@ max-width: 80%;
 
 .food__heart{
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: $middle-font;
   color: $softgray-color;
   padding: 10px;
   border-radius: $fifty-px;
@@ -203,7 +297,7 @@ max-width: 80%;
 
 .food__bag{
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: $middle-font;
   color: $softgray-color;
   padding: 10px;
   border-radius: $fifty-px;
@@ -262,7 +356,7 @@ max-width: 80%;
 }
 
 .panel__title {
-  font-size: 1.5em;
+  font-size: $middle-font;
   width: 100%;
   position: relative;
   margin: 0;
@@ -322,6 +416,28 @@ max-width: 80%;
 }
 /**/ 
 
+/*botón arriba*/ 
+#myBtn {
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: $softpeach-color;
+  font-size: $capsule-font-size;
+  color: $title-color; 
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 100px;
+}
+
+#myBtn:hover {
+  background-color: $babygrey-color;
+	color: $title-color;
+}
+/**/ 
+
 /* footer */
 footer{
   background-color: $reallypink-color;
@@ -348,9 +464,7 @@ width: 80px;
 img.newsletter_cupcakes{
   width: 200px;
 }
-
 }
- 
 
 @media (max-width: 480px) { 
 
@@ -358,7 +472,6 @@ img.newsletter_cupcakes{
   max-width: 250px;
 }
 }
-
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -370,7 +483,6 @@ img.newsletter_cupcakes{
   .map__footer img{
     max-width: 150px;
   }
-
 }
 
 @media only screen 
@@ -396,4 +508,35 @@ img.newsletter_cupcakes{
     }
     }
 
+/*Menu*/    
+@media screen and (max-width: 767px) {
+  #navMain > ul {
+    width: 100%;
+    display:none; 
+  }
+  #menuBurger ~ label {
+    display: inline-flex;
+  }
+  #menuBurger:checked ~ ul {
+    display:block;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+  #navMain > ul {
+    display: flex;
+    flex-wrap:nowrap;
+  }
+  #navMain > ul > li {
+    flex: 1 1 25%;
+  }
+  #navMain > ul > li > ul {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+}
 /**/

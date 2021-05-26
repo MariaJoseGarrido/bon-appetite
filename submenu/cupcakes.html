@@ -6,6 +6,7 @@
   <meta name="keywords" content="html, scss, sass"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/assets/img/cupcake-icon.png"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -14,7 +15,7 @@
   <link rel="stylesheet" href="/assets/css/style.css"/>
   <title>Cupcakes - Bon Appétit</title>
 </head>
-
+<button onclick="topFunction()" id="myBtn" title="goToTop">Subir</button>
 <body>
   <header>
     <div class="container-fluid">
@@ -32,15 +33,24 @@
         </div>
       </div>
     </div>
-
-    <nav class="interior__secondmenu text-center p-2 mt-3">
+    <nav id="navMain" class="text-center">
+      <input type="checkbox" id="menuBurger" />
+      <label for="menuBurger"></label>
       <ul>
-        <a class="mx-5" href="/boutique.html">Boutique</a>
-        <a class="mx-5" href="/regalos.html">Regalos</a>
-        <a class="mx-5" href="/faq.html">Faq</a>
-        <a class="mx-5" href="/contacto.html">Contacto</a>
+        <li>
+          <a href="/boutique.html">Boutique</a>
+        </li>
+        <li>
+          <a href="/regalos.html">Regalos</a>
+        </li>
+        <li>
+          <a href="/faq.html">Faq</a>
+        </li>
+        <li>
+          <a href="/contacto.html">Contacto</a>
+        </li>
       </ul>
-    </nav>
+    </nav>  
   </header>
 
   <main class="container-fluid my-5">
@@ -48,14 +58,14 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
         <li class="breadcrumb-item"><a href="/boutique.html">Boutique</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Macarons</li>
+        <li class="breadcrumb-item active" aria-current="page">Cupcakes</li>
       </ol>
     </nav>
     <div class="container">
       <div class="row">
         <div class="col-md-2 d-flex justify-content-start">
           <ul>
-            <li><a href="#">Macarons</a></li>
+            <li><a href="/submenu/macarons.html">Macarons</a></li>
             <li><a href="/submenu/cupcakes.html">Cupcakes</a></li>
             <li><a href="/submenu/chocolate.html">Chocolates</a></li>
             <li><a href="/submenu/donas.html">Donas</a></li>
@@ -298,6 +308,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
